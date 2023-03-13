@@ -13,8 +13,8 @@ function App() {
 				<ReactPlayer
 					// style={{ margin: '0 auto' }}
 					className="mx-auto"
-					url="https://www.youtube.com/embed/r9jwGansp1E"
-					// url="/videos/Screen Recording 2021-10-19 at 10.43.01 PM.mov"
+					// url="https://www.youtube.com/embed/r9jwGansp1E"
+					url="/videos/Screen Recording 2021-10-19 at 10.43.01 PM.mov"
 					controls
 					config={{
 						youtube: {
