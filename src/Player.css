@@ -1,0 +1,17 @@
+.player-wrapper {
+	position: relative;
+	padding-top: 56.25%; /* 720 / 1280 = 0.5625 */
+	/* padding-right: 20%;
+	padding-left: 20%; */
+}
+
+.react-player {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.video-player {
+	width: 100%;
+	aspect-ratio: 16/9;
+}
