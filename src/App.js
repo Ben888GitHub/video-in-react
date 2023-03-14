@@ -4,10 +4,11 @@ import ReactPlayer from 'react-player/lazy';
 // import whatsappVideo from "../public/"
 import './Player.css';
 import { lazy, Suspense } from 'react';
-import ReactIFrame from './components/ReactIFrame';
+// import ReactIFrame from './components/ReactIFrame';
 
 // import UsingIFrame from './components/UsingIFrame';
-const UsingIFrame = lazy(() => import('./components/UsingIFrame'));
+// const UsingIFrame = lazy(() => import('./components/UsingIFrame'));
+const ReactIFrame = lazy(() => import('./components/ReactIFrame'));
 
 function App() {
 	// useEffect(() => {
