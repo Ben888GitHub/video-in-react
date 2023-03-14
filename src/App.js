@@ -4,6 +4,8 @@ import ReactPlayer from 'react-player/lazy';
 // import whatsappVideo from "../public/"
 import './Player.css';
 import { lazy, Suspense } from 'react';
+
+// import ReactEmbed from './components/ReactEmbed';
 // import ReactIFrame from './components/ReactIFrame';
 
 // import UsingIFrame from './components/UsingIFrame';
@@ -59,6 +61,7 @@ function App() {
 			<Suspense fallback="Loading...">
 				<ReactIFrame />
 			</Suspense>
+			{/* <ReactEmbed /> */}
 			{/* <Suspense fallback="Loading...">
 				<UsingIFrame />
 			</Suspense> */}
