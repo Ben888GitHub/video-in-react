@@ -1,10 +1,12 @@
 import './App.css';
 
-import ReactPlayer from 'react-player/youtube';
+import ReactPlayer from 'react-player/lazy';
 // import whatsappVideo from "../public/"
 import './Player.css';
+// import { lazy, Suspense } from 'react';
 
-// import UsingIFrame from './components/UsingIFrame';
+import UsingIFrame from './components/UsingIFrame';
+// const UsingIFrame = lazy(() => import('./components/UsingIFrame'))
 
 function App() {
 	// useEffect(() => {
@@ -22,9 +24,9 @@ function App() {
 				<ReactPlayer
 					// style={{ margin: '0 auto' }}
 					className="mx-auto"
-					url="https://www.youtube.com/embed/69V__a49xtw"
+					// url="https://www.youtube.com/embed/69V__a49xtw"
 					// url="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
-					// url="/videos/Screen Recording 2021-10-19 at 10.43.01 PM.mov"
+					url="/videos/Screen Recording 2021-10-19 at 10.43.01 PM.mov"
 					// url="https://player.twitch.tv/?channel=info24tv&parent=localhost:3000"
 					// url="https://player.vimeo.com/video/Vm4tx1O9GAc"
 					// url="https://www.youtube.com/watch?v=UVCP4bKy9Iw"
@@ -51,7 +53,7 @@ function App() {
 					// allowFullScreen
 				/>
 				<br />
-				{/* <UsingIFrame /> */}
+				<UsingIFrame />
 			</div>
 
 			{/* <VideoReactLib /> */}
