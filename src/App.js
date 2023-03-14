@@ -1,6 +1,6 @@
 import './App.css';
 
-import ReactPlayer from 'react-player/youtube';
+import ReactPlayer from 'react-player/lazy';
 // import whatsappVideo from "../public/"
 import './Player.css';
 import UsingIFrame from './components/UsingIFrame';
@@ -49,9 +49,9 @@ function App() {
 					// height="560px"
 					// allowFullScreen
 				/>
-				{/* <br />
 				<br />
-				<UsingIFrame /> */}
+				<br />
+				<UsingIFrame />
 			</div>
 
 			{/* <VideoReactLib /> */}
