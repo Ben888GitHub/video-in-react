@@ -4,10 +4,12 @@ const UsingIFrame = () => {
 	return (
 		<div>
 			<iframe
-				title="youtube-embed"
-				src="https://www.youtube.com/embed/69V__a49xtw?enablejsapi=1"
+				title="Embedding Youtube"
+				src="https://www.youtube-nocookie.com/embed/69V__a49xtw?enablejsapi=1"
 				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
 				allowFullScreen
+				sandbox="allow-same-origin allow-forms allow-popups allow-scripts allow-presentation"
+				seamless
 				// width={1000}
 				// height={500}
 				className="lg:w-[680px] lg:h-[470px] mx-auto"
