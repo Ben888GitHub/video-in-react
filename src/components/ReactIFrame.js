@@ -6,7 +6,7 @@ const ReactIFrame = () => {
 		<div>
 			<h2>React IFrame</h2>
 			<Iframe
-				url="https://www.youtube.com/embed/xDMP3i36naA"
+				url="https://www.youtube-nocookie.com/embed/xDMP3i36naA"
 				// width="640px"
 				// height="320px"
 				id=""
@@ -14,6 +14,7 @@ const ReactIFrame = () => {
 				display="block"
 				position="relative"
 				title="react yt"
+				overflow="hidden"
 			/>
 		</div>
 	);
