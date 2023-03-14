@@ -4,6 +4,7 @@ import ReactPlayer from 'react-player/lazy';
 // import whatsappVideo from "../public/"
 import './Player.css';
 import { lazy, Suspense } from 'react';
+import ReactIFrame from './components/ReactIFrame';
 
 // import UsingIFrame from './components/UsingIFrame';
 const UsingIFrame = lazy(() => import('./components/UsingIFrame'));
@@ -23,7 +24,7 @@ function App() {
 			<div className="w-full aspect-video">
 				<ReactPlayer
 					// style={{ margin: '0 auto' }}
-					className="mx-auto"
+					className="mx-auto "
 					// url="https://www.youtube.com/embed/69V__a49xtw"
 					// url="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
 					url="/videos/Screen Recording 2021-10-19 at 10.43.01 PM.mov"
@@ -54,10 +55,12 @@ function App() {
 				/>
 				<br />
 			</div>
-
 			<Suspense fallback="Loading...">
-				<UsingIFrame />
+				<ReactIFrame />
 			</Suspense>
+			{/* <Suspense fallback="Loading...">
+				<UsingIFrame />
+			</Suspense> */}
 
 			{/* <VideoReactLib /> */}
 			{/* <ReactYoutubeLib /> */}
