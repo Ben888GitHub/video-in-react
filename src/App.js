@@ -3,10 +3,10 @@ import './App.css';
 import ReactPlayer from 'react-player/lazy';
 // import whatsappVideo from "../public/"
 import './Player.css';
-// import { lazy, Suspense } from 'react';
+import { lazy, Suspense } from 'react';
 
-import UsingIFrame from './components/UsingIFrame';
-// const UsingIFrame = lazy(() => import('./components/UsingIFrame'))
+// import UsingIFrame from './components/UsingIFrame';
+const UsingIFrame = lazy(() => import('./components/UsingIFrame'));
 
 function App() {
 	// useEffect(() => {
@@ -36,25 +36,28 @@ function App() {
 					// autoPlay
 					onPlay={() => console.log('video is playing')}
 					// ref={playerRef}
-					config={{
-						youtube: {
-							playerVars: {
-								origin: 'https://www.youtube.com',
-								showInfo: 1,
-								enablejsapi: 1,
-								playsinline: 1
-								// autoplay: 1
-							}
-						}
-					}}
+					// config={{
+					// 	youtube: {
+					// 		playerVars: {
+					// 			origin: 'https://www.youtube.com',
+					// 			showInfo: 1,
+					// 			enablejsapi: 1,
+					// 			playsinline: 1
+					// 			// autoplay: 1
+					// 		}
+					// 	}
+					// }}
 					// className="w-16 h-9"
 					// width="840px"`
 					// height="560px"
 					// allowFullScreen
 				/>
 				<br />
-				<UsingIFrame />
 			</div>
+
+			<Suspense fallback="Loading...">
+				<UsingIFrame />
+			</Suspense>
 
 			{/* <VideoReactLib /> */}
 			{/* <ReactYoutubeLib /> */}
