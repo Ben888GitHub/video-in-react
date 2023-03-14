@@ -37,7 +37,7 @@ function App() {
 					config={{
 						youtube: {
 							playerVars: {
-								origin: 'benevolent-cannoli-2294ec.netlify',
+								origin: 'https://www.youtube.com',
 								showInfo: 1,
 								enablejsapi: 1,
 								playsinline: 1
